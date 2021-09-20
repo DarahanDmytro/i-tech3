@@ -1,20 +1,19 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
   <title>Лабораторна №3 Дараган</title>
-  <meta lang="ua">
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 	  crossorigin="anonymous"></script>
-  <script type="text/javascript">
+  <script>
     if (typeof jQuery == 'undefined') { 
            document.write(unescape("%3Cscript src='/js/jquery-1.6.1.min.js' 
           type='text/javascript'%3E%3C/script%3E"));
     }
   </script>
-  <script type="text/javascript" src="js/clockDriwer.js"></script>
+  <script src="js/clockDriwer.js"></script>
 </head>
 <body>
    <header >
@@ -22,9 +21,9 @@
    </header>
    <main>
      <img id="slider" src="images/1.jpg" alt="Слайдер">
-     <span>1ms <input id="ranger" type="range" min="1" max="10000" step="1" val="5000" oninput="changeInterval()"> 10000ms</span>
+     <span>1ms <input id="ranger" type="range" min="1" max="10000" step="1" oninput="changeInterval()"> 10000ms</span>
      <br>
-     <label for="ranger">5000 ms<label>
+     <label for="ranger">5000 ms</label>
    </main>
    <footer>
      <div id="clock"></div>
